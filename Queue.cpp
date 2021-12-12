@@ -3,9 +3,9 @@
 // Email: mohamed.hesham5550@gmail.com
 
 // Implementing Queue with struct
-// In the below code I will implement 5 methods related to it
-// Create, push, pop, empty, size, Front and Back
-// It will be Doubly Linked List 
+// In the below code I will implement 7 methods related to it
+// Create, Push, Pop, Empty, Size, Front and Back
+// It will be Doubly Linked List
 
 #include <iostream>
 using namespace std;
@@ -28,11 +28,13 @@ Queue *create() {
 
 void push(Queue *queue, int x) {
     Node *tmp = new Node;
-    tmp->prev = queue->front;
     tmp->value = x;
-    queue->front = tmp;
-    if(queue->back == NULL) {
-        queue->back = queue->front;
+    if(queue->back) {
+        queue->back->prev = tmp;
+    }
+    queue->back = tmp;
+    if(queue->front == NULL) {
+        queue->front = queue->back;
     }
     queue->size ++;
 }
