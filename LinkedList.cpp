@@ -2,9 +2,9 @@
 // Author: Mohamed Hesham
 // Email: mohamed.hesham5550@gmail.com
 
-// Implementing the LinkedList functaionality with struct
+// Implementing LinkedList with struct
 // In the below code I will implement 5 methods related to it
-// Create Insert, Remove, Search, Print
+// Create, Insert, Remove, Search and Print
 // It will be Doubly Linked List 
 
 
