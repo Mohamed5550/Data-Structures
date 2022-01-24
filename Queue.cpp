@@ -5,14 +5,13 @@
 // Implementing Queue with struct
 // In the below code I will implement 7 methods related to it
 // Create, Push, Pop, Empty, Size, Front and Back
-// It will be Doubly Linked List
 
 #include <iostream>
 using namespace std;
 
 struct Node {
     int value;
-    Node *prev = NULL;
+    Node *next = NULL;
 };
 
 struct Queue {
@@ -30,7 +29,7 @@ void push(Queue *queue, int x) {
     Node *tmp = new Node;
     tmp->value = x;
     if(queue->back) {
-        queue->back->prev = tmp;
+        queue->back->next = tmp;
     }
     queue->back = tmp;
     if(queue->front == NULL) {
@@ -40,7 +39,7 @@ void push(Queue *queue, int x) {
 }
 
 void pop(Queue *queue) {
-    Node *tmp = queue->front->prev;
+    Node *tmp = queue->front->next;
     if(queue->front == queue->back) {
         queue->back = NULL;
     }
@@ -66,6 +65,8 @@ int back(Queue *queue) {
 }
 
 int main() {
+
+    // some testing
     Queue *myQueue = create();
     push(myQueue, 5);
     push(myQueue, 6);

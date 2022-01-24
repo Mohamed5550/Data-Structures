@@ -63,6 +63,8 @@ void print(LinkedList *head) {
 }
 
 int main() {
+
+    // some testing
     
     // creating the list
     LinkedList *myList = create();
