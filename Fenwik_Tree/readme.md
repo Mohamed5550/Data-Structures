@@ -15,4 +15,4 @@
 
 ### Calculating ranges
 
-- By this way we can get the sum of values between 1 and i, which i is any index in the array. Thus we can ge the value of any range between i and j. 
+- By this way we can get the sum of values between 1 and i, which i is any index in the array. Thus we can ge the value of any range between i and j.
