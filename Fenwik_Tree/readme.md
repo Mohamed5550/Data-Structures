@@ -7,7 +7,7 @@
 
 ## How it works
 
-- Each index is responsible for the 2^(x-1) indicies below it, which x is the place of its least significant bit of the current index.
+- Each index is responsible for the *2^(x-1)* indicies below it, which x is the place of its least significant bit of the current index.
 
 ### For Example
 
