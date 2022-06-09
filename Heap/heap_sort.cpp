@@ -44,7 +44,7 @@ vector <int> build(vector <int> &v) {
     }
 
     for(int i = n/2; i > 0; i --) {
-        max_heapify(heap, i, v.size() + 1);
+        max_heapify(heap, i, v.size());
     }
 
     return heap;
